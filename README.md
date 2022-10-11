@@ -1,5 +1,8 @@
 # 30DaysOfLearningChallenge_GDSC
 30DaysOfLearningChallenge_GDSC is a challenge to learn tech
+## Day2
+><i>en_US :</i>
+Learned what is Spring Boot
 
 ## Day1
 ><i>en_US :</i>
