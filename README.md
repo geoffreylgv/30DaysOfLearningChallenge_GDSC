@@ -2,7 +2,7 @@
 30DaysOfLearningChallenge_GDSC is a challenge to learn tech
 ## Day3
 ><i>en_US :</i>
-Learned JPA, Hibernate, Lombok, Spring Boot and API REST
+Learned JPA, Hibernate, Lombok and API REST
 ## Day2
 ><i>en_US :</i>
 Learned what is Spring Boot
