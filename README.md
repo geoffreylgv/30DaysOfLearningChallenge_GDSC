@@ -1,5 +1,11 @@
 # 30DaysOfLearningChallenge_GDSC
 30DaysOfLearningChallenge_GDSC is a challenge to learn tech
+
+![Model image](class_universitiesAPI.png)
+## Day4
+><i>en_US :</i>
+1. Build an api that retrieves information about universities in my country (project can be improved to retrieve more information and in other countries too)
+2. Designing the model class for the API
 ## Day3
 ><i>en_US :</i>
 Learned JPA, Hibernate, Lombok and API REST
