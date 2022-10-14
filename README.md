@@ -17,3 +17,8 @@ Learned JPA, Hibernate, Lombok and API REST
 2. Designing the model class for the API
 
 ![Model image](class_universitiesAPI.png)
+## Day5
+><i>en_US :</i>
+First Run Done
+
+![First Run](first_run.png)
