@@ -22,3 +22,7 @@ Learned JPA, Hibernate, Lombok and API REST
 First Run Done
 
 ![First Run](first_run.png)
+## Day6
+><i>en_US :</i>
+Project Created (maven Pom + dependencies)
+    Application Properties updated
