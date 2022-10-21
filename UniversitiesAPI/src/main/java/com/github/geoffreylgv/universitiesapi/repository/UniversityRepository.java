@@ -17,5 +17,9 @@ import java.util.List;
  * @author geoffreylgv
  */
 public interface UniversityRepository extends JpaRepository<University, Long> {
-
+    
+    //find university search like name
+    @Query(value = "select u from University u where u.name like %:name% ")
+    public List<University> findLikeName(@Param("name") String name);
+    
 }
