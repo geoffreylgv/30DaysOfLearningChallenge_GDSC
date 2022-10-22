@@ -57,5 +57,20 @@ public class UniversityController {
             return new ResponseEntity("There is no record !", HttpStatus.OK);
         }
     }
+//get university by id
+@GetMapping(path = "univ/get/{id}")
+public ResponseEntity getUniversityById(@PathVariable("id") Long id) {
+    Optional<University> univ = univRepo.findById(id);
+    return univ.map(u -> new ResponseEntity<>(u, HttpStatus.OK))
+            .orElse(new ResponseEntity("University Not Found !", HttpStatus.NOT_FOUND));
+}
+
+//update university
+@PutMapping(path = "/univ/update/{id}")
+public ResponseEntity updateUniv(@PathVariable("id") Long id, @RequestBody University univ) {
+    Optional<University> existUniversity = univRepo.findById(id);
+    
+    return new ResponseEntity(univ.getName()+" updated successfuly !", HttpStatus.OK);
+}
 
 }
