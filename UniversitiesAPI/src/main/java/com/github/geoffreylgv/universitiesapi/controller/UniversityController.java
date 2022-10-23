@@ -69,7 +69,12 @@ public ResponseEntity getUniversityById(@PathVariable("id") Long id) {
 @PutMapping(path = "/univ/update/{id}")
 public ResponseEntity updateUniv(@PathVariable("id") Long id, @RequestBody University univ) {
     Optional<University> existUniversity = univRepo.findById(id);
-    
+    if(!existUniversity.isPresent()){
+        return new ResponseEntity("University not exist, Retry !", HttpStatus.CONFLICT);
+    }
+    //else
+    univ.setId(id);
+    univRepo.save(univ);
     return new ResponseEntity(univ.getName()+" updated successfuly !", HttpStatus.OK);
 }
 
