@@ -23,5 +23,5 @@ public interface UniversityRepository extends JpaRepository<University, Long> {
     public List<University> findLikeName(@Param("name") String name);
     
         //find university search like name, director & founded date
-        //public List<University> findByNameLikeOrDirectorLikeOrFoundedDateLike(String search);
+        public List<University> findByNameLikeOrDirectorLikeOrFoundedDateLike(String search);
 }
