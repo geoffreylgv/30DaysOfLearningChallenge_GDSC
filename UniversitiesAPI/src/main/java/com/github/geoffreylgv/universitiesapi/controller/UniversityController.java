@@ -78,4 +78,9 @@ public ResponseEntity updateUniv(@PathVariable("id") Long id, @RequestBody Unive
     return new ResponseEntity(univ.getName()+" updated successfuly !", HttpStatus.OK);
 }
 
+    //get university by id
+    @GetMapping(path = "univ/get/search")
+    public ResponseEntity getOccurenceSearched(@RequestParam(value = "search") String search) {
+        return new ResponseEntity<>(univRepo.findByNameLikeOrDirectorLikeOrFoundedDateLike(search), HttpStatus.OK);
+    }
 }
