@@ -57,30 +57,32 @@ public class UniversityController {
             return new ResponseEntity("There is no record !", HttpStatus.OK);
         }
     }
-//get university by id
-@GetMapping(path = "univ/get/{id}")
-public ResponseEntity getUniversityById(@PathVariable("id") Long id) {
-    Optional<University> univ = univRepo.findById(id);
-    return univ.map(u -> new ResponseEntity<>(u, HttpStatus.OK))
-            .orElse(new ResponseEntity("University Not Found !", HttpStatus.NOT_FOUND));
-}
 
-//update university
-@PutMapping(path = "/univ/update/{id}")
-public ResponseEntity updateUniv(@PathVariable("id") Long id, @RequestBody University univ) {
-    Optional<University> existUniversity = univRepo.findById(id);
-    if(!existUniversity.isPresent()){
-        return new ResponseEntity("University not exist, Retry !", HttpStatus.CONFLICT);
+    //get university by id
+    @GetMapping(path = "univ/get/{id}")
+    public ResponseEntity getUniversityById(@PathVariable("id") Long id) {
+        Optional<University> univ = univRepo.findById(id);
+        return univ.map(u -> new ResponseEntity<>(u, HttpStatus.OK))
+                .orElse(new ResponseEntity("University Not Found !", HttpStatus.NOT_FOUND));
     }
-    //else
-    univ.setId(id);
-    univRepo.save(univ);
-    return new ResponseEntity(univ.getName()+" updated successfuly !", HttpStatus.OK);
-}
 
     //get university by id
     @GetMapping(path = "univ/get/search")
     public ResponseEntity getOccurenceSearched(@RequestParam(value = "search") String search) {
         return new ResponseEntity<>(univRepo.findByNameLikeOrDirectorLikeOrFoundedDateLike(search), HttpStatus.OK);
     }
+
+    //update university
+    @PutMapping(path = "/univ/update/{id}")
+    public ResponseEntity updateUniv(@PathVariable("id") Long id, @RequestBody University univ) {
+        Optional<University> existUniversity = univRepo.findById(id);
+        if(!existUniversity.isPresent()){
+            return new ResponseEntity("University not exist, Retry !", HttpStatus.CONFLICT);
+        }
+        //else
+        univ.setId(id);
+        univRepo.save(univ);
+        return new ResponseEntity(univ.getName()+" updated successfuly !", HttpStatus.OK);
+    }
+
 }
