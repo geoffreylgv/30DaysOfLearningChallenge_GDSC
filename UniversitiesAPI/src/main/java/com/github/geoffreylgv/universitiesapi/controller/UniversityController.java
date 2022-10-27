@@ -67,10 +67,10 @@ public class UniversityController {
     }
 
     //get university by id
-    @GetMapping(path = "univ/get/search")
+    /*@GetMapping(path = "univ/get/search")
     public ResponseEntity getOccurenceSearched(@RequestParam(value = "search") String search) {
         return new ResponseEntity<>(univRepo.findByNameLikeOrDirectorLikeOrFoundedDateLike(search), HttpStatus.OK);
-    }
+    }*/
 
     //update university
     @PutMapping(path = "/univ/update/{id}")
