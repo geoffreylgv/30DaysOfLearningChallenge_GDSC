@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <title>Universities API, Java Web + Spring Boot</title>
+
+        <style>
+            *{
+                transition:.7s;
+                margin:0px;
+                padding:0px;
+                box-sizing:border-box;
+            }
+            body{
+                /*background:#252525;*/
+            }
+            main{
+                /*                width:100%;
+                                height:auto;*/
+            }
+            .nav {
+                background-color: #ffffff !important;
+            }
+            /* water effect container */
+            .waterEffect{
+                opacity:.8;
+                position:relative;
+                margin:100px auto;
+                height:300px;
+                width:300px;
+                /*background-image:url('https://images.unsplash.com/photo-1497316730643-415fac54a2af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80') ;*/
+                background-image:url('https://media-exp1.licdn.com/dms/image/C4D03AQGyTBvZUyVd0w/profile-displayphoto-shrink_800_800/0/1636373908341?e=1651104000&v=beta&t=WZjqp7Mw-403ALJ18LtxhEjNFZwlwSrocZxbA6WSP_c&auto=format&fit=crop&w=464&q=80') ;
+                background-size:cover;
+                background-position:center;
+                border-radius:50%;
+                overflow:hidden;
+                box-shadow:0px 0px 35px -5px rgba(50, 88, 130, 0.32);
+            }
+            /* using after to make water like effect  */
+            .waterEffect::after{
+                content:'';
+                position:absolute;
+                opacity:.6;
+                bottom:0px;
+                right:-30%;
+                height:400px;
+                width:400px;
+                background:skyblue;
+                border-radius:30%;
+                animation:effect 7s ease-in-out alternate infinite;
+            }
+
+            /* main part  */
+
+            /* animation for the effect */
+
+            @keyframes effect{
+                to{
+                    transform:translateY(-100%) rotate(360deg);
+                }
+            }
+            .geo-card {
+                max-width: 900px !important;
+                margin: 0 auto !important;
+                padding: 40px 40px 50px;
+                border: 1 solid #f1f1f1a9;
+                border-radius: 10px;
+                background-color: #FFFF;
+            }
+            .materialert{
+                position: relative;
+                min-width: 150px;
+                padding: 15px;
+                margin-bottom: 20px;
+                margin-top: 15px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                transition: all 0.1s linear;
+                webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .materialert .material-icons{
+                margin-right: 10px;
+            }
+            .materialert .close-alert{
+                -webkit-appearance: none;
+                border: 0;
+                cursor: pointer;
+                color: inherit;
+                background: 0 0;
+                font-size: 22px;
+                line-height: 1;
+                font-weight: bold;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, .7);
+                filter: alpha(opacity=40);
+                margin-bottom: -5px;
+                position: absolute;
+                top: 16px;
+                right: 5px;
+            }
+            .materialert.info{
+                background-color: #039be5;
+                color: #fff;
+            }
+            .materialert.success{
+                background-color: #43a047;
+                color: #fff;
+            }
+            .materialert.error{
+                background-color: #c62828;
+                color: #fff;
+            }
+            .materialert.danger{
+                background-color: #c62828;
+                color: #fff;
+            }
+            .materialert.warning{
+                background-color: #fbc02d;
+                color: #fff;
+            }
+            .icon_style{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                font-size: 20px;
+                color: white;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- NavBar -->
+        <div wicket:id="navBar"></div>
+        <!-- /End NavBar -->
+        <div class="container-fluid">
+            <div class="container">
+                <main>
+                    <!--<h3 class="text-black text-center">Application de Message avec SprinBoot, WebService et Apache Wicket</h3>-->
+                    <!--  water effect container  -->
+                    <!--<div class="waterEffect"></div>-->
+                </main>
+                <wicket:child/>
+            </div>
+            <!-- Footer -->
+            <div wicket:id="footer"></div>
+            <!-- /End Footer -->
+        </div>
+        <!-- Footer -->
+        <!--<div wicket:id="footer"></div>-->
+        <!-- /End Footer -->
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    </body>
+</html>

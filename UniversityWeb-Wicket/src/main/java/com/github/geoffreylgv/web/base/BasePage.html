@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+        <title>Universities API, Java Web + Spring Boot</title>
+    </head>
+    <body>
+        <!-- NavBar -->
+        <div wicket:id="navBar"></div>
+        <!-- /End NavBar -->
+        <div class="container is-fluid">
+            <div class="container">
+                <wicket:child/>
+            </div>
+            <!-- Footer -->
+            <!--<div wicket:id="footer"></div>-->
+            <!-- /End Footer -->
+        </div>
+        <!-- Footer -->
+        <!--<div wicket:id="footer"></div>-->
+        <!-- /End Footer -->
+        <script>
+            $(document).ready(function () {
+                $('#data_table').DataTable({
+                    scrollY: '50vh',
+                    scrollCollapse: true,
+                    paging: false,
+                });
+            });
+        </script>
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    </body>
+</html>

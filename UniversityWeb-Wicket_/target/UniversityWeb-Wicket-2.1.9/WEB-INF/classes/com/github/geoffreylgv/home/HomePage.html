@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+    <body>
+        <wicket:extend>
+            <div class="row">
+                <div class="col s12 m7">
+                    <h2 class="header">Horizontal Card</h2>
+                    <div class="card horizontal">
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            </div>
+                            <div class="card-action">
+                                <!-- Forms -->
+                                <form wicket:id="form">
+                                    <h4 class="text-center">Formulaire</h4>
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                            <label for='search'>Search</label>
+                                            <input id='search' wicket:id="search" placeholder="Looking up for university, Search !"/>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 text-center mt-2">
+                                        <button type="submit" wicket:id="send" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                                <!-- /End Forms -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Director</th>
+                            <th>Founded Date</th>
+                            <th>Language</th>
+                            <th>Country / City</th>
+                            <th>Type Of University</th>
+                            <th>URL</th>
+                            <th>Street</th>
+                            <th>Phone</th>
+                            <th>Mail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                            <td>Lollipop</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </wicket:extend>
+    </body>
+</html>

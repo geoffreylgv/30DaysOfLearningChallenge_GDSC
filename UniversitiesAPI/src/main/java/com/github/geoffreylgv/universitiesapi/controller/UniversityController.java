@@ -10,14 +10,11 @@ import com.github.geoffreylgv.universitiesapi.entity.Country;
 import com.github.geoffreylgv.universitiesapi.entity.University;
 import com.github.geoffreylgv.universitiesapi.repository.UniversityRepository;
 
-import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 import java.util.Optional;
 
 import com.github.geoffreylgv.universitiesapi.utils.enumation.TypeUniv;
-import org.bouncycastle.its.asn1.IValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,7 +32,7 @@ public class UniversityController {
     UniversityRepository univRepo;
 
     //install
-    @PostMapping(path = "/univ/install")
+    @PostMapping(path = "/install")
     public ResponseEntity install() {
         Address address = new Address(null, "Bld Eyadema", "univ-lome.tg",
                 "+228 22 25 25", "communication_ul@univ-lome.tg");

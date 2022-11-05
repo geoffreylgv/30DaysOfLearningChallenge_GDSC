@@ -1,0 +1,7 @@
+com\github\geoffreylgv\universitiesapi\UniversityApp.class
+com\github\geoffreylgv\universitiesapi\repository\UniversityRepository.class
+com\github\geoffreylgv\universitiesapi\utils\enumation\TypeUniv.class
+com\github\geoffreylgv\universitiesapi\entity\Country.class
+com\github\geoffreylgv\universitiesapi\entity\University.class
+com\github\geoffreylgv\universitiesapi\entity\Address.class
+com\github\geoffreylgv\universitiesapi\controller\UniversityController.class
