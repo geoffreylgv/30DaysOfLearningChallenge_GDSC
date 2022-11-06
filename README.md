@@ -26,6 +26,3 @@ First Run Done
 ><i>en_US :</i>
 Project Created (maven Pom + dependencies)
     Application Properties updated
-## Day7 to Day20
-><i>en_US :</i>
-Coding and Learning (API Rest : Best Pratices [Microsoft Learn API courses] )
