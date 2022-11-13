@@ -45,7 +45,7 @@ public class UniversityController {
     }
 
     //get all universities
-    @GetMapping(path = "/univ/all")
+    @GetMapping(path = "/universities")
     public ResponseEntity getAll() {
         List<University> listUniv = univRepo.findAll();
         if (!listUniv.isEmpty()) {
