@@ -56,7 +56,7 @@ public class UniversityController {
     }
 
     //get university by id
-    @GetMapping(path = "univ/get/{id}")
+    @GetMapping(path = "/find/{id}")
     public ResponseEntity getUniversityById(@PathVariable("id") Long id) {
         Optional<University> univ = univRepo.findById(id);
         return univ.map(u -> new ResponseEntity<>(u, HttpStatus.OK))
@@ -64,10 +64,10 @@ public class UniversityController {
     }
 
     //get university by id
-    /*@GetMapping(path = "univ/get/search")
+    @GetMapping(path = "/find")
     public ResponseEntity getOccurenceSearched(@RequestParam(value = "search") String search) {
         return new ResponseEntity<>(univRepo.findByNameLikeOrDirectorLikeOrFoundedDateLike(search), HttpStatus.OK);
-    }*/
+    }
 
     //update university
     @PutMapping(path = "/univ/update/{id}")
