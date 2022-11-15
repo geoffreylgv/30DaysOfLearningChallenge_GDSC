@@ -70,7 +70,7 @@ public class UniversityController {
     }
 
     //update university
-    @PutMapping(path = "/univ/update/{id}")
+    @PutMapping(path = "/find/{id}")
     public ResponseEntity updateUniv(@PathVariable("id") Long id, @RequestBody University univ) {
         Optional<University> existUniversity = univRepo.findById(id);
         if(!existUniversity.isPresent()){
