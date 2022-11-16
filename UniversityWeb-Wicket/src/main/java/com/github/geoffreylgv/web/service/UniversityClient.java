@@ -37,6 +37,17 @@ public class UniversityClient {
 
     private SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
-    
+    @SneakyThrows
+    public List<University> getAll() throws IOException {
+        List<University> universities = new LinkedList<>();
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        CloseableHttpResponse response = httpClient.execute(new HttpGet(getUri("/universities")));
+
+        if (response.getStatusLine().getStatusCode() == 200) {
+            HttpEntity entity = response.getEntity();
+            
+        }
+        return universities;
+    }
 
 }
