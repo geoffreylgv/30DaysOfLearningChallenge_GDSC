@@ -45,9 +45,15 @@ public class UniversityClient {
 
         if (response.getStatusLine().getStatusCode() == 200) {
             HttpEntity entity = response.getEntity();
-            
+            if (entity != null) {
+                JSONArray jsonArray = new JSONArray(EntityUtils.toString(entity));
+                for (int i = 0; i < jsonArray.length(); i++) {
+                   
+                }
+            }
         }
         return universities;
     }
 
+    
 }
