@@ -56,4 +56,7 @@ public class UniversityClient {
     }
 
     
+    private String getUri(String path) {
+        return APIConstante.API_URL + path;
+    }
 }
