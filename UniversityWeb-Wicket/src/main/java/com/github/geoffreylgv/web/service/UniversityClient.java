@@ -54,7 +54,15 @@ public class UniversityClient {
         }
         return universities;
     }
-
+    Address addressJson(JSONObject json) {
+        Address add = new Address();
+        add.setId(json.optLong("id"));
+        add.setMail(json.optString("mail"));
+        add.setUrl(json.optString("url"));
+        add.setPhone(json.optString("phone"));
+        add.setStreet(json.optString("street"));
+        return add;
+    }
     
     private String getUri(String path) {
         return APIConstante.API_URL + path;
