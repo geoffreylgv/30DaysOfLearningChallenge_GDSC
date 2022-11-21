@@ -72,6 +72,16 @@ public class UniversityClient {
         country.setNameFR(json.optString("nameFR"));
         return country;
     }
+    University univJson(JSONObject json) {
+        University univ = new University();
+        univ.setId(json.optLong("id"));
+        univ.setName(json.optString("name"));
+        univ.setAddress(addressJson(json.getJSONObject("address")));
+       
+
+        return univ;
+    }
+
     
     private String getUri(String path) {
         return APIConstante.API_URL + path;
