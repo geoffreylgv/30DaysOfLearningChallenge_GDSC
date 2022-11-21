@@ -77,8 +77,8 @@ public class UniversityClient {
         univ.setId(json.optLong("id"));
         univ.setName(json.optString("name"));
         univ.setAddress(addressJson(json.getJSONObject("address")));
-       
-
+        univ.setType(TypeUniv.typeUnivByLibelle(json.optString("type")));
+        univ.setLanguage(json.optString("language"));
         return univ;
     }
 
