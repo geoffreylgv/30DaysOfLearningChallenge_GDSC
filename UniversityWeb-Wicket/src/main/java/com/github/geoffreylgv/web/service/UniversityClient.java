@@ -37,6 +37,7 @@ public class UniversityClient {
 
     private SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
+    
     @SneakyThrows
     public List<University> getAll() throws IOException {
         List<University> universities = new LinkedList<>();
@@ -48,12 +49,13 @@ public class UniversityClient {
             if (entity != null) {
                 JSONArray jsonArray = new JSONArray(EntityUtils.toString(entity));
                 for (int i = 0; i < jsonArray.length(); i++) {
-                   
+                    universities.add(univJson((JSONObject) jsonArray.get(i)));
                 }
             }
         }
         return universities;
     }
+    
     Address addressJson(JSONObject json) {
         Address add = new Address();
         add.setId(json.optLong("id"));
