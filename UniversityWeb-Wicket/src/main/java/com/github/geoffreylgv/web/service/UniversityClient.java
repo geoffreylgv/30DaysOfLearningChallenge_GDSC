@@ -77,10 +77,17 @@ public class UniversityClient {
         univ.setId(json.optLong("id"));
         univ.setName(json.optString("name"));
         univ.setAddress(addressJson(json.getJSONObject("address")));
+        univ.setCountry(countryJson(json.getJSONObject("country")));
+        univ.setDirector(json.optString("director"));
+        if (json.optString("foundedDate") != null) {
+            univ.setFoundedDate((LocalDate.parse(json.optString("foundedDate"))));
+        }
         univ.setType(TypeUniv.typeUnivByLibelle(json.optString("type")));
         univ.setLanguage(json.optString("language"));
+
         return univ;
     }
+
 
     
     private String getUri(String path) {
