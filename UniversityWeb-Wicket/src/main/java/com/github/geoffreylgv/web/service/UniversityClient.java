@@ -55,6 +55,13 @@ public class UniversityClient {
         }
         return universities;
     }
+    @SneakyThrows
+    public List<University> getUnivBySearch(String search) throws IOException, URISyntaxException {
+        List<University> universities = new LinkedList<>();
+        HttpGet http = new HttpGet(getUri("/find"));
+        
+        return universities;
+    }
     
     Address addressJson(JSONObject json) {
         Address add = new Address();
