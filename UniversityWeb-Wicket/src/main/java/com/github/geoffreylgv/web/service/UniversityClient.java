@@ -59,6 +59,10 @@ public class UniversityClient {
     public List<University> getUnivBySearch(String search) throws IOException, URISyntaxException {
         List<University> universities = new LinkedList<>();
         HttpGet http = new HttpGet(getUri("/find"));
+        URI uri = new URIBuilder(http.getURI())
+                .addParameter("search", search)
+                .build();
+        http.setURI(uri);
         
         return universities;
     }
