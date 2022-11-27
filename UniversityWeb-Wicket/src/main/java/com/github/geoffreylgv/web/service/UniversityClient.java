@@ -37,7 +37,6 @@ public class UniversityClient {
 
     private SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
-    
     @SneakyThrows
     public List<University> getAll() throws IOException {
         List<University> universities = new LinkedList<>();
@@ -55,6 +54,7 @@ public class UniversityClient {
         }
         return universities;
     }
+
     @SneakyThrows
     public List<University> getUnivBySearch(String search) throws IOException, URISyntaxException {
         List<University> universities = new LinkedList<>();
@@ -77,7 +77,7 @@ public class UniversityClient {
         }
         return universities;
     }
-    
+
     Address addressJson(JSONObject json) {
         Address add = new Address();
         add.setId(json.optLong("id"));
@@ -87,7 +87,7 @@ public class UniversityClient {
         add.setStreet(json.optString("street"));
         return add;
     }
-    
+
     Country countryJson(JSONObject json) {
         Country country = new Country();
         country.setId(json.optLong("id"));
@@ -96,6 +96,7 @@ public class UniversityClient {
         country.setNameFR(json.optString("nameFR"));
         return country;
     }
+
     University univJson(JSONObject json) {
         University univ = new University();
         univ.setId(json.optLong("id"));
@@ -112,9 +113,8 @@ public class UniversityClient {
         return univ;
     }
 
-
-    
     private String getUri(String path) {
         return APIConstante.API_URL + path;
     }
+
 }
