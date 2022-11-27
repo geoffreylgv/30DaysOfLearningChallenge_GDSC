@@ -63,7 +63,18 @@ public class UniversityClient {
                 .addParameter("search", search)
                 .build();
         http.setURI(uri);
-        
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        CloseableHttpResponse response = httpClient.execute(http);
+
+        if (response.getStatusLine().getStatusCode() == 200) {
+            HttpEntity entity = response.getEntity();
+            if (entity != null) {
+                JSONArray jsonArray = new JSONArray(EntityUtils.toString(entity));
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    universities.add(univJson((JSONObject) jsonArray.get(i)));
+                }
+            }
+        }
         return universities;
     }
     
