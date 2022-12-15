@@ -56,7 +56,7 @@ public class UniversityController {
     }
 
     //get university by id
-    @GetMapping(path = "/find/{id}")
+    @GetMapping(path = "/{id}")
     public ResponseEntity getUniversityById(@PathVariable("id") Long id) {
         Optional<University> univ = univRepo.findById(id);
         return univ.map(u -> new ResponseEntity<>(u, HttpStatus.OK))
@@ -64,13 +64,13 @@ public class UniversityController {
     }
 
     //get university by id
-    @GetMapping(path = "/find")
+    @GetMapping()
     public ResponseEntity getOccurenceSearched(@RequestParam(value = "search") String search) {
-        return new ResponseEntity<>(univRepo.findByNameLikeOrDirectorLikeOrFoundedDateLike(search), HttpStatus.OK);
+        return new ResponseEntity<>(univRepo.findLikeNameDirectorFoundedDateCountryType(search), HttpStatus.OK);
     }
 
     //update university
-    @PutMapping(path = "/find/{id}")
+    @PutMapping(path = "/{id}")
     public ResponseEntity updateUniv(@PathVariable("id") Long id, @RequestBody University univ) {
         Optional<University> existUniversity = univRepo.findById(id);
         if(!existUniversity.isPresent()){
