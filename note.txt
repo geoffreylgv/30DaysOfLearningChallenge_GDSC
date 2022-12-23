@@ -1,0 +1,521 @@
+INSERT INTO addresses(mail,phone,street,url)
+VALUES("info.iaec@iaectogo.com", "+228 222092", "Bd De la Kara, Derrière l’ambassade
+du Sénégal, Tokoin-Doumassesse", "iaectogo.com");
+
+Institution Funding 
+Private
+
+History 
+Founded 1986.
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l’Enseignement Technique et de la Formation Professionnelle
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Abissi Anawoè
+
+Job title:Directeur général
+
+***
+INSERT INTO addresses(mail,phone,street,url)
+VALUES("info.eamau@eamau.org", "+228 22 21 62 53", "BP 2067
+422, rue des Balises, Tokoin Doumasséssé", "eamau.org");
+Address 
+Street:BP 2067
+422, rue des Balises, Tokoin Doumasséssé
+
+City:Lomé
+
+WWW:http://www.eamau.org
+
+Institution Funding 
+Public
+
+History 
+Founded 1975.
+
+Admission Requirements 
+Secondary School certificate (baccalauréat).
+
+Tuition Fees 
+National:2,500,000 per annum (XOF)
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l’Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Moussa Dembélé
+
+Job title:Directeur général
+
+***
+
+Address 
+Street:01 BP 1502
+383 Bd de la Paix
+
+City:Lomé 1
+
+WWW:http://www.ucao-uut.tg
+
+Other Sites 
+Also Sanguéra Campus.
+
+Institution Funding 
+Private
+
+History 
+Founded 2007.
+
+Language(s) 
+French;English
+
+Accrediting Agency 
+Ministère de l'Enseignement supérieur et de la Recherche
+
+Religious Affiliation 
+Christian
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Bertin Agbobly-Atayi
+
+Job title:President
+
+***
+Address 
+Street:BP 9141
+Avenue Mobutu Sese Seko
+
+City:Lomé (Port)
+
+WWW:http://www.ispshdblome.com
+
+Institution Funding 
+Private
+
+History 
+Founded 1987.
+
+Tuition Fees 
+National:Bachelor: 350.100- 650.000 per annum depending on fields of studies. Master: 500.100 per annum. (XOF)
+
+Language(s) 
+French
+
+Accrediting Agency 
+Conseil Africain et Malgache pour l’Enseignement Supérieur (CAMES)
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : José-Antoine Elegbede
+
+Job title:President
+***
+Address 
+Street:689, rue Djablé sis au quartier super-Taco, derrière la BTCI annexe
+
+City:Lomé
+
+WWW:http://esatogo.net
+
+Institution Funding 
+Private
+
+History 
+Founded 2010.
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l’Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Charles Birregah
+
+Job title:Directeur
+***
+Address 
+Street:01 BP 3518
+Rue de la gare routière d'Agbalépédogan prolongée vers Agoènyivé Assiyéyé
+
+City:Lomé
+
+WWW:http://www.esiba-iua.tg
+
+Institution Funding 
+Private
+
+History 
+Founded 1990. Groupe ESIBA Business School is composed of ESIBA (Enseignement Supérieur d’Informatique, de Business et d’Administration) and IUA (Institut Universitaire d’Agoènyivé).
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l’Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Didier Kueviakoe
+
+Job title:Directeur général
+***
+
+Address 
+Street:11 BP 149
+Bvd de l'Oti, face Eglise Catholique Maria Goretti de Bè-Kpota
+
+City:Lomé
+
+WWW:http://www.esig.tg
+
+Institution Funding 
+Private
+
+History 
+Founded 2008.
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l'Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Ambroise Toglo
+
+Job title:Directeur
+***
+
+Address 
+Street:BP 20436
+
+City:Lomé
+
+WWW:http://prosport.guru/formatec/index.php
+
+Institution Funding 
+Private
+
+History 
+Founded 2012.
+
+Accrediting Agency 
+Ministère de l’Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+***
+
+Address 
+Street:BP 3002
+10, avenue Grunitzky
+
+City:Lomé
+
+WWW:http://www.esamecole.fr
+
+Institution Funding 
+Private
+
+Admission Requirements 
+Baccalauréat
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l’Enseignement Technique
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Roger Mifetou
+
+Job title:Directeur pédagogique
+**
+
+Address 
+Street:378, Rue BEKPO Quartier Tokoin Hôpital, non loin de l’ancien Hôtel AGNI
+
+City:Lomé
+
+WWW:http://www.iheris.net
+
+Institution Funding 
+Private
+
+History 
+Founded 2011.
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l’Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+***
+
+Address 
+Street:01 BP 1514
+Av. Pya à coté d’ECOBANK Totsi
+
+City:Lomé
+
+WWW:http://www.jumau-ita.com
+
+Institution Funding 
+Private
+
+History 
+Founded 2010.
+
+Accrediting Agency 
+Ministère ​de l’Enseignement supérieur et de la Recherche
+
+top Officers
+ 
+Head : M Beguedou
+
+Job title:Directeur général
+***
+Address 
+Street:BP 8019
+52, bd des armées
+
+City:Lomé
+
+WWW:https://esagnde.org/index.php/lecole/
+
+Institution Funding 
+Private
+
+History 
+Founded 2000.
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l’Enseignement Technique
+
+top Officers
+ 
+Head : Soeur Suka
+
+Job title:Directrice générale
+***
+Address 
+Street:BP 13517
+8, Rue Agnes Gaba Kodjoviakope
+
+City:Lomé
+
+WWW:http://www.esgis.org
+
+Other Sites 
+Also branches in Cotonou (Benin) and Libreville (Gabon).
+
+Institution Funding 
+Private
+
+History 
+Founded 1994.
+
+Tuition Fees 
+National:Licence, 400,000-600,000 per annum; Master degree programme, 700,000-800,000 per annum. (XOF)
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l'Enseignement technique; Conseil africain et malgache pour l'enseignement superieur (CAMES)
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Marcel Macy Akakpo
+
+Job title:Director
+***
+
+Address 
+Street:Quartier de Noukafou
+Boulevard Jean-Paul II
+
+City:Lomé
+
+WWW:http://rusta-usttg.org
+
+Institution Funding 
+Private
+
+History 
+Founded 2012.
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l'Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Dieudonné Gumedzoe
+
+Job title:Director
+**
+
+Address 
+Street:22 BP 191
+Av. Akéï, Novissi
+
+City:Lomé
+
+WWW:http://ifordd.org
+
+Institution Funding 
+Private
+
+History 
+Founded 2012.
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l'Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Amavi Kouevi
+
+Job title:Director
+***
+
+Address 
+Street:BP 43
+Route de l'ex ENI
+
+City:Kara
+
+Post Code:404
+
+WWW:http://www.unikara.org
+Institution Funding 
+Public
+
+History 
+Founded 1999. Acquired present status 2004.
+
+Admission Requirements 
+Baccalauréat or equivalent
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l’Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Komla Sanda
+
+Job title:Président
+
+***
+Address 
+Street:BP 1515
+
+City:Lomé
+
+WWW:http://www.univ-lome.tg
+
+Other Sites 
+A traditional and distance education institution.
+
+Institution Funding 
+Public
+
+History 
+Founded 1970 as University of Benin replacing former Centre d'Enseignement supérieur, established 1962 with sections in Dahomey and Togo under an agreement between the Governments of the two countries and Government of France. Acquired present name 2001.
+
+Academic Year 
+October to July (October-February; March-July)
+
+Admission Requirements 
+Secondary school certificate (baccalauréat) or equivalent
+
+Language(s) 
+French
+
+Accrediting Agency 
+Ministère de l'Enseignement supérieur et de la Recherche
+
+Student Body 
+co-ed
+
+top Officers
+ 
+Head : Komla Dodzi Kokoroko
+
+Job title:Président
+
+Senior Administrative Officer : Komlan Batawila
+
+Job title:Premier Vice-Président
+
+International Relations Officer : Koffivi Komlan Guillaume Ketoh
+
+Job title:Directeur, Direction de l'Information des Relations Extérieures et de la Coopération
+
+***
+
