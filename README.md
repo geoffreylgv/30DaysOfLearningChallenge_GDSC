@@ -1,7 +1,8 @@
 # 30DaysOfLearningChallenge_GDSC
 30DaysOfLearningChallenge_GDSC is a challenge to learn some stack
-Principaly here, i wrote Togo universities name, foundation date, director and other <b>
-attributes of an univerty : Togo Universities API
+Principaly here, i wrote Togo universities name, foundation date, director and other </b>
+attributes of an univerty : Togo Universities API </b>
+Feel free to update DB adding university of your country setting up the country code ; star the project too
 ## Day1
 ><i>en_US :</i>
 First day, looking for the recommended framework to develop APIs with Java. I started working on java and I find that java can do great things, I understand why big companies use it.
